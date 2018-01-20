@@ -32,7 +32,7 @@
     "redux": "^3.7.2",
     "bootstrap": "3.3.5",
     "mapbox-gl": "^0.40.1",
-    "pg": "^4.5.5",
+    "pg": "^6",
     "pg-hstore": "^2.3.2",
     "sequelize": "^4.4.0"
   }
