@@ -1,0 +1,39 @@
+{
+  "name": "breakglass",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/breakGlass/inCaseOfEmergency.git"
+  },
+  "keywords": [
+    "meshnetwork",
+    "emergency"
+  ],
+  "author": "breakGlass",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/breakGlass/inCaseOfEmergency/issues"
+  },
+  "homepage": "https://github.com/breakGlass/inCaseOfEmergency#readme",
+  "devDependencies": {
+    "webpack": "^3.6.0",
+    "nodemon": "^1.12.1"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "path": "^0.12.7",
+    "react": "^16.2.0",
+    "redux": "^3.7.2",
+    "bootstrap": "3.3.5",
+    "mapbox-gl": "^0.40.1",
+    "pg": "^4.5.5",
+    "pg-hstore": "^2.3.2",
+    "sequelize": "^4.4.0"
+  }
+}
