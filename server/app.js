@@ -1,10 +1,15 @@
 const express = require('express');
 const bodyParser = require('body-parser');
+const morgan = require('morgan');
 const path = require('path');
 
 const db = require('./models').db;
 
 const app = express();
+
+
+// use morgan logging middleware
+app.use(morgan('dev'));
 
 //body-parsing
 app.use(bodyParser.json());
