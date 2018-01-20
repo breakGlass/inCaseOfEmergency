@@ -21,7 +21,7 @@ router.get('/:resourceId', (req, res, next) => {
 });
 
 // get resources by type
-router.get('/type/', (req, res next) => {
+router.get('/type/', (req, res, next) => {
   Resources.findAll({
       where: req.query
     })
@@ -48,7 +48,7 @@ router.put('/:resourceId', (req, res, next) => {
 });
 
 // destroy resource
-route.delete('/:resourceId', (req, res, next) => {
+router.delete('/:resourceId', (req, res, next) => {
   Resources.findById(req.params.resourceId)
     .then(resource => resource.destroy()
       .then(() => res.sendStatus(204))
