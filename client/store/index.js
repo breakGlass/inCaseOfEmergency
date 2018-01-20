@@ -11,7 +11,7 @@ import {
 
   
   const reducer = combineReducers({
-
+//TODO: list all reducers
   });
   
   const store = createStore(
