@@ -1,11 +1,16 @@
 body {
-  background-color: rgb(65, 83, 85);
+  background-color: rgb(35, 41, 43);
   color: white;
   font-family: "Helvetica";
 }
 
 html {
   margin: 0;
+}
+
+#menu {
+  padding: 5px;
+  margin-bottom: 25px;
 }
 
 #app {
