@@ -20,14 +20,7 @@ router.get('/:resourceId', (req, res, next) => {
     .catch(next);
 });
 
-// get resources by type
-router.get('/type/', (req, res, next) => {
-  Resources.findAll({
-      where: req.query
-    })
-    .then(similarRes => res.json(similarRes))
-    .catch(next);
-})
+// TODO: find by resource type, city, etc query
 
 
 //add resource
@@ -39,12 +32,11 @@ router.post('/', (req, res, next) => {
 
 //update resource
 router.put('/:resourceId', (req, res, next) => {
-  Resources.findById(req.params.userId)
+  Resources.findById(req.params.resourceId)
     .then(resource => {
       resource.update(req.body)
-        .then(newResource => res.json(newResource))
+        .then(() => res.sendStatus(200))
     })
-    .catch(next)
 });
 
 // destroy resource
