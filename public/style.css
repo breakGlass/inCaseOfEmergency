@@ -2,6 +2,7 @@ body {
   background-color: rgb(35, 41, 43);
   color: white;
   font-family: "Helvetica";
+  text-shadow: 0 5px 25px rgb(185, 214, 214)
 }
 
 html {
