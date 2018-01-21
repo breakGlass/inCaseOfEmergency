@@ -1,18 +1,3 @@
-/* 
-import React from 'react';
-import ReactDOM from 'react-dom';
-import Routes from './routes';
-import { Provider } from 'react-redux';
-//import './index.css';
-import store from './store';
-
-ReactDOM.render(
-<Provider store={store}>
-  <Routes />
-</Provider>,
-document.getElementById('app'));
- */
-
 var mapboxgl = require('mapbox-gl/dist/mapbox-gl.js');
 // const api = require("./api");
 // const buildMarker = require("./marker.js");
