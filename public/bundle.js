@@ -21530,7 +21530,7 @@ var Routes = function (_Component) {
           _react2.default.createElement(
             _reactRouterDom.Switch,
             null,
-            _react2.default.createElement(_reactRouterDom.Route, { path: '/home', component: UserHome })
+            _react2.default.createElement(_reactRouterDom.Route, { path: '/', component: Home })
           )
         )
       );
