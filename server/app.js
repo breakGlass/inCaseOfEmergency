@@ -16,7 +16,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
 // serve dynamic routes
-app.use('/api', require('./routes'));
+app.use('/api', require('./api'));
 
 // static file-serving middleware
 app.use(express.static(path.join(__dirname, '..', 'public')));
@@ -37,8 +37,7 @@ app.use(function(err, req, res, next) {
 const port = 3000;
 app.listen(port, function() {
   console.log('The server is listening closely on port', port);
-  db
-    .sync()
+  db.sync()
     .then(function() {
       console.log('Synchronated the database');
     })
